@@ -1,0 +1,80 @@
+{
+    "Parameter_Templates":
+    [
+        {
+            "//" : "Each AppTemplate will be loaded with app parameters and" ,
+            "//" : "run with command parameters",
+
+            "//" : "This default Parameter Template will be used for those Apps" ,
+            "//" : "which do not specify a template",
+
+            "//" : "The parameters below will be substituted into the App script" ,
+            "//" : "E.g. <area_0> will be replaced with '\\etc\\my_area'" ,
+
+            "//" : "Run files and templates themselves use placeholders <app_name> and <home_area>" ,
+            "template_name" : "Default",
+
+       
+            "command_parameters"    :
+            {
+                "order"                      :    "10",
+
+                "//" : "Optional:The command which will run is",
+                "//" : "command_line_prefix + script + command_line_suffix",           
+                "command_line_prefix"        :   "",
+                "command_line_suffix"        :   "",
+
+
+                "//" : "Optional:Will be used for any exec, script, output, or parameter area",
+                "//" : "which is not specified",           
+                "default_area"                :   "<home_area>",
+
+
+                "//" : "Optional:Area where the script will run",
+                "exec_area"                    :   "<home_area>",
+
+
+                "//" : "Optional:This file will be loaded with the generated script",
+                "script_name"                :   "<app_name>_script.py",            
+                "script_area"                :   "<home_area>",
+
+
+                "//" : "Specifies the file type used to run the final script",
+                "//" : "E.g. py, bat",
+                "script_extension"           :   ".py",
+
+
+                "//" : "Optional:This file will be loaded with the script's output",
+                "output_file_name"            :   "<app_name>_output.txt",            
+                "output_file_area"            :   "<home_area>"
+            },
+
+
+            "//" : "Optional:These parameters will be loaded into the App's template",
+            "//" : "as placeholders",
+            "//" : "E.g. <area_0> will be replaced with '\\etc\\my_area'" ,
+            "app_parameters"    :
+            {
+                "area_0"             :   "<home_area>"
+            }
+        },
+
+        
+        {
+            "template_name" : "Sample_Template",
+
+            "//" : "Use <app_name> as a placeholder for the App Template name " ,
+            "command_parameters":
+            {
+
+                "script_name":"<app_name>.py"
+            },
+
+            "app_parameters":
+            {
+                
+                "script_name":"<app_name>.py"
+            }
+        }
+    ]
+}

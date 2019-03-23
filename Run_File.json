@@ -1,0 +1,156 @@
+{
+    "Apps" :
+    [
+        {
+            "//" : "Each AppTemplate will be loaded with app parameters and" ,
+            "//" : "run with command parameters",
+            "app_name" : "App_0",
+
+       
+            "command_parameters"    :
+            {
+                "order"                      :    20,
+
+
+                "//" : "Optional:The command which will run is",
+                "//" : "command_line_prefix + script + command_line_suffix",           
+                "command_line_prefix"        :   "ls -l",
+                "command_line_suffix"        :    "-t -r",
+
+
+                "//" : "Optional:Will be used for any exec, script, output, or parameter area",
+                "//" : "which is not specified",           
+                "default_area"                :   "<home_area>",
+
+
+                "//" : "Optional:Area where the script will run",
+                "exec_area"                    :   "<home_area>",
+
+
+                "//" : "Optional:This file will be loaded with the generated script",
+                "script_name"                :   "App0_script.py",            
+                "script_area"                :   "<home_area>",
+
+
+                "//" : "Specifies the file type used to run the final script",
+                "//" : "E.g. py, bat",
+                "script_extension"           :   ".py",
+
+
+                "//" : "Optional:This file will be loaded with the script's output",
+                "output_file_name"            :   "App0_output.txt",            
+                "output_file_area"            :   "<home_area>",
+
+
+                "//" : "Optional:If this parameter is set, the template will be taken from this file instead of the database",
+                "source_name"                :   "App_0.txt",            
+                "source_area"                :   "<home_area>",
+
+
+                "//" : "Optional:These template parameters will be used for",
+                "//" : "unset parameters",   
+                "parameter_template"         :   "Sample_Template"
+            },
+
+
+            "//" : "Optional:These parameters will be loaded into AppTemplate", 
+            "app_parameters"    :
+            {
+                "area_0"             :   "<home_area>"
+            }
+        },
+
+
+        {
+            "//" : "Each AppTemplate will be loaded with app parameters and" ,
+            "//" : "run with command parameters",
+            "app_name" : "App1",
+
+       
+            "command_parameters"    :
+            {
+                "order"                      :    10,
+
+
+                "command_line_prefix"        :   "py",
+
+                "//" : "Optional:Area where the script will run",
+                "exec_area"                    :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri",
+
+
+                "//" : "Optional:This file will be loaded with the generated script",
+                "script_name"                :   "App1_script.py",            
+                "script_area"                :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri",
+
+                "//" : "Required: Specifies the file type used to run the final script",
+                "//" : "E.g. py, bat",
+                "script_extension"           :   ".py",
+
+
+                "//" : "Optional:This file will be loaded with the script's output",
+                "output_file_name"            :   "App1_output.txt",            
+                "output_file_area"            :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri"
+            },
+
+
+            "//" : "Optional:These parameters will be loaded into AppTemplate", 
+            "app_parameters"    :
+            {
+                "area_0"             :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri"
+            }
+        },
+
+
+
+        {
+            "app_name" : "App2",
+
+
+            "command_parameters"    :
+            {
+
+               "order"                      :    5,
+
+                "//" : "Optional:Will be used for any exec, script, output, or parameter area",
+                "//" : "which is not specified",           
+                "default_area"                :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri",
+
+
+                "//" : "Optional:Area where the script will run",
+                "exec_area"                    :   "<home_area>",
+
+
+                "//" : "Optional:This file will be loaded with the generated script",
+                "script_name"                :   "App2_script.py",            
+                "script_area"                :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri",
+
+                "//" : "Required: Specifies the file type used to run the final script",
+                "script_extension"           :   ".bat",
+
+
+                "//" : "Optional:This file will be loaded with the script's output",
+                "output_file_name"            :   "App2_output.txt",            
+                "output_file_area"            :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri",
+
+
+                "//" : "Optional:This file will be loaded with this rule's parameters in the ",
+                "//" : "specified format:XML, JSON, or TEXT",
+                "parameter_file_name"        :   "rule_0_parameters.xml",            
+                "parameter_file_area"        :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri",
+                "parameter_file_type"        :   "XML",
+
+
+                "//" : "Optional:This parameter will be set with the script result and will be",
+                "//" : "available to other Rules in this Configuration file",   
+                "script_result_parameter"    :   "rule_0_result"
+            },
+
+
+            "//" : "Optional:These parameters will be loaded into AppTemplate", 
+            "app_parameters"    :
+            {
+                "area_0"             :   "C:\\Users\\edydo\\AppData\\Local\\Programs\\Python\\Python37-32\\niri"
+            }
+        }
+    ]
+}
